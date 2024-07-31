@@ -19,3 +19,22 @@
     text-align: center;
     font-family: impact;
 }
+h1 {
+    text-align: center;
+    border: 1px solid green;
+    font-family: impact;
+    letter-spacing: 5px;
+    padding: 10px;
+    border-radius: 10px;
+}
+h1:hover {
+    text-align: left;
+}
+h2 {
+    font-size: 30px;
+    font-family: cursive;
+    text-align: center;
+    text-shadow: 2px 2px red;
+    font-weight: bold;
+
+}
