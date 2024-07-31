@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Combinators</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1>CSS Combinators</h1>
+    <!-- Descendent Selector -->
+     <!-- Selects all child and grand child by ancestor -->
+     <div>
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+        <section>
+            <p>Paragraph 4</p>
+        </section>
+     </div>
+    <!-- Child Selectors -->
+     <!-- Only selects child elements that is paragraph 5, 6, 7, and 9. -->
+     <div class="chld">
+        <p>Paragraph 5</p>
+        <p>Paragraph 6</p>
+        <p>Paragraph 7</p>
+        <!-- Note: All section and div is not selected because they are grand child -->
+        <section>
+            <p>Paragraph 8</p>
+            <div>
+                <p>New Paragraph</p>
+            </div>
+        </section>
+        <p>Paragraph 9</p>
+     </div>
+     <!-- Adjacent Sibling Selector -->
+      <!-- This selector selects directly next element not selector element that is paragraph 15 only. -->
+      <div id="adj">
+        <p>Paragraph 10</p>
+        <p>Paragraph 11</p>
+        <section>
+            <p>Paragraph 12</p>
+            <div>
+                <p>Paragraph 13</p>
+            </div>
+        </section>
+        <p>Paragraph 14</p>
+      </div>
+      <p>This is a paragraph 15.</p> <!--Only selects this element by adjacent selector -->
+      <p>This is a paragraph 16</p>
+
+      <!-- General Sibling Selector -->
+      <div class="gen">
+        <p>This is a paragraph 17.</p>
+        <p>This is a paragraph 18.</p>
+        <section>
+            <p>This is a paragaraph 19.</p>
+            <p>This is a paragraph 20.</p>
+        </section>
+        <p>This is a paragraph 21.</p>
+      </div>
+      <p>This is a paragraph 22.</p>
+      <p>New paragraph.</p>
+      <section>
+        This is good section.
+      </section>
+      <p>This is a paragraph 23.</p>
+
+      
+</body>
+</html>

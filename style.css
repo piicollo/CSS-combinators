@@ -1,0 +1,21 @@
+/* div p {
+    background-color: rgb(5, 44, 5);
+    text-align: center;
+    color: white;
+    padding: 5px 5px;
+    font-family: impact;
+    letter-spacing: 5px;
+    /* } 
+/* .chld > p {
+     background-color: green;
+    } */ 
+
+/* #adj + p {
+    background-color: tomato;
+} */
+
+.gen ~ p {
+    background-color: blue;
+    text-align: center;
+    font-family: impact;
+}
